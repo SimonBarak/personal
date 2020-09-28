@@ -2,6 +2,7 @@
 layout: project
 title: Website for architect studio
 mobile-images:
+- "/v1601309526/loners/vk-_2020-09-28_at_18.10.52_so1l63.jpg"
 - "/v1601303391/loners/vk-_2020-09-28_at_16.15.34_mvkjp7.jpg"
 - "/v1601303415/loners/vk-_2020-09-28_at_16.20.30_gz80nu.jpg"
 - "/v1601303413/loners/vk-_2020-09-28_at_16.28.35_vqcwll.jpg"
