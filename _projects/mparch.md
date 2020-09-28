@@ -2,16 +2,11 @@
 layout: project
 title: Website for architect studio
 mobile-images:
-- "/v1601290824/loners/vk-_2020-09-28_at_11.51.51_d2r7ls.jpg"
-- "/v1601290825/loners/vk-_2020-09-28_at_11.51.45_xxeink.jpg"
-- "/v1601290826/loners/vk-_2020-09-28_at_11.48.38_xg4pv0.jpg"
-- "/v1601290822/loners/vk-_2020-09-28_at_11.54.40_zh8pg3.jpg"
-- "/v1601290824/loners/vk-_2020-09-28_at_11.42.03_dfdwhp.jpg"
-- "/v1601290823/loners/vk-_2020-09-28_at_11.51.21_omae9w.jpg"
-- "/v1601290825/loners/vk-_2020-09-28_at_11.49.49_j2jgee.jpg"
-- "/v1601290826/loners/vk-_2020-09-28_at_11.45.36_nnnpb0.jpg"
-- "/v1601290824/loners/vk-_2020-09-28_at_11.45.30_zqjhsm.jpg"
-- v1601039615/loners/IMG_1743.jpg
+- "/v1601303391/loners/vk-_2020-09-28_at_16.15.34_mvkjp7.jpg"
+- "/v1601303415/loners/vk-_2020-09-28_at_16.20.30_gz80nu.jpg"
+- "/v1601303413/loners/vk-_2020-09-28_at_16.28.35_vqcwll.jpg"
+- "/v1601303388/loners/vk-_2020-09-28_at_16.16.36_r3spgq.jpg"
+- "/v1601303391/loners/vk-_2020-09-28_at_16.13.45_nsszrp.jpg"
 images:
 - "/v1586546182/loners/Screenshot_2020-04-10_21.16.05_t2wghz.jpg"
 - "/v1586542331/loners/mparch1_wiimpf.jpg"
