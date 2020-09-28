@@ -3,11 +3,7 @@ layout: project
 date: '2019-10-10T13:56:19.000+00:00'
 title: Czech Prosecutor Institute
 weight: 20
-mobile-images:
-- "/v1601307744/loners/portfolio-format-0_cveqvj.jpg"
-- "/v1601307746/loners/portfolio-format-1_vnsxer.jpg"
-- "/v1601307746/loners/portfolio-format-2_b4kvcd.jpg"
-- "/v1601307745/loners/portfolio-format-3_a6iuqz.jpg"
+mobile-images: []
 images:
 - "/v1593269881/loners/Screenshot_2020-06-27_16.57.50_a6a12o.jpg"
 - "/v1580811706/loners/Screenshot_2019-12-04_12.03.20_m2t8zs.jpg"
