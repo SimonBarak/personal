@@ -1,0 +1,184 @@
+---
+layout: default
+---
+
+<!-- -  -->
+
+<section class="pt-20 pb-10 blure-in">
+  <div class="mx-auto px-2 md:max-w-2xl lg:max-w-5xl">
+    <h1 class="mb-10 text-3xl md:text-6xl font-light">{{ page.headline }}</h1>
+    <div class="max-w-2xl text-xl">{{ content }}</div>
+  </div>
+</section>
+<section class="py-10 blure-in">
+  <div class="md:max-w-2xl lg:max-w-5xl mx-auto">
+    <div class="flex flex-wrap items-baseline">
+      <a
+        class="flex block cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg p-2 m-2"
+        href="https://twitter.com/S_SCHIACCI"
+      >
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="/assets/img/avatar.jpg"
+          alt="Simon Barak Avatar"
+        />
+        <div class="">
+          <div class="leading-none">Twitter</div>
+          <div class="text-gray-600">
+            <span>@S_SCHIACCI</span>
+          </div>
+        </div>
+      </a>
+      <a
+        class="flex block cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg p-2 m-2"
+        href="mailto:simon@loners.company"
+      >
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="/assets/ico/icon-mail.svg"
+          alt="Avatar of Jonathan Reinink"
+        />
+        <div class="">
+          <div class="leading-none">E-mail</div>
+          <div class="text-gray-600">
+            <span>simon@loners.company</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+  <div class="md:max-w-2xl lg:max-w-5xl mx-auto">
+    <div class="flex flex-wrap items-baseline">
+      <a
+        class="flex block cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg p-2 m-2"
+        href="https://github.com/lonersCompany"
+      >
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="/assets/ico/icon-github.svg"
+          alt="github icon"
+        />
+        <div class="">
+          <div class="leading-none">GitHub</div>
+          <div class="text-gray-600">
+            <span>/lonerscompany</span>
+          </div>
+        </div>
+      </a>
+
+      <a
+        class="flex block cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg p-2 m-2"
+        href="https://www.behance.net/simon-barak"
+      >
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="/assets/ico/icon-behance.svg"
+          alt="Behance Icon"
+        />
+        <div class="">
+          <div class="leading-none">Behance</div>
+          <div class="text-gray-600">
+            <span>/simon-barak</span>
+          </div>
+        </div>
+      </a>
+
+      <a
+        class="flex block cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg p-2 m-2"
+        href="https://www.linkedin.com/in/simon-barak/"
+      >
+        <img
+          class="w-10 h-10 rounded-full mr-4"
+          src="/assets/ico/icon-linkedin.svg"
+          alt="Behance Icon"
+        />
+        <div class="">
+          <div class="leading-none">LinkedIn</div>
+          <div class="text-gray-600">
+            <span>/simon-barak</span>
+          </div>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+<!-- -  -->
+<section class="py-10 blure-in flex flex-wrap">
+  {%- for item in site.projects -%}
+  <!-- ... -->
+  {%- if item.mobile-images[0] -%}<!-- ... -->
+  {%- include mobile-mockup.html -%}
+  <!-- ... -->{%- endif -%}<!-- ... -->{%- endfor -%}
+</section>
+<section>
+  <div class="py-10 md:py-20">
+    <div class="desktop-mockup m-auto">
+      <div>
+        <img
+          src="https://res.cloudinary.com/dhxmg9p4i/image/upload/v1601044804/blog/pr.jpg"
+          alt=""
+        />
+      </div>
+    </div>
+  </div>
+</section>
+<!-- -  -->
+<section class="py-10 blure-in">
+  <div
+    id="entries"
+    class="entries md:max-w-2xl lg:max-w-5xl mx-auto"
+    data-view="cards"
+  >
+    <div class="entries-cards">{%- include entries-cards.html -%}</div>
+  </div>
+</section>
+<!-- -  -->
+<section class="py-10">
+  <div class="md:max-w-2xl lg:max-w-5xl mx-auto">
+    <h2 class="mb-3 text-3xl md:text-6xl font-light">Tool box</h2>
+    {%- include tool-box.html -%}
+  </div>
+</section>
+
+<section class="py-10 lg:pb-40">
+  <div class="md:max-w-2xl lg:max-w-5xl mx-auto">
+    <h2 class="mb-3 text-3xl md:text-6xl font-light">Links</h2>
+
+    <div class="p-2 pb-3">
+      <blockquote class="twitter-tweet">
+        <p lang="en" dir="ltr">
+          Is anybody else missing text and images when listening to
+          audiobooks?<br /><br />I think that copy note or search in the text is
+          an important feature for audiobook interface.
+          <a
+            href="https://twitter.com/hashtag/audiobook?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#audiobook</a
+          >
+          <a
+            href="https://twitter.com/hashtag/tts?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#tts</a
+          >
+          <a
+            href="https://twitter.com/hashtag/webdevelopment?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#webdevelopment</a
+          >
+          <a
+            href="https://twitter.com/hashtag/Dyslexia?src=hash&amp;ref_src=twsrc%5Etfw"
+            >#Dyslexia</a
+          >
+          <a href="https://t.co/fwvwKH9UCn">pic.twitter.com/fwvwKH9UCn</a>
+        </p>
+        &mdash; Šimon Bařák (@S_SCHIACCI)
+        <a
+          href="https://twitter.com/S_SCHIACCI/status/1278723414677696514?ref_src=twsrc%5Etfw"
+          >July 2, 2020</a
+        >
+      </blockquote>
+      <script
+        async
+        src="https://platform.twitter.com/widgets.js"
+        charset="utf-8"
+      ></script>
+    </div>
+  </div>
+</section>

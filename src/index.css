@@ -1,0 +1,41 @@
+@tailwind base;
+
+@tailwind components;
+
+@tailwind utilities;
+
+@import "./css/_mobile-mocup.css";
+
+.vertical-absolute-center {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+}
+
+.mockup-gallery button {
+  opacity: 0;
+}
+
+.mockup-gallery:hover button {
+  opacity: 1;
+}
+
+.slide {
+  display: none;
+}
+
+.active {
+  animation: flash 0.3s;
+  display: block;
+  /* opacity: 1; */
+}
+
+@keyframes flash {
+  0% {
+    filter: blur(5px);
+  }
+
+  100% {
+    filter: blur(0px);
+  }
+}

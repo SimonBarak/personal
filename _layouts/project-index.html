@@ -1,0 +1,26 @@
+---
+layout: default
+---
+
+<!-- -  -->
+{% if page.content %}
+<section class="pb-10 pt-32">
+  <div
+    class="md:max-w-2xl lg:max-w-5xl mx-auto text-lg px-5 text-xl text-block"
+  >
+    <div class="max-w-lg">{{ content }}</div>
+  </div>
+</section>
+{% endif %}
+<!-- -  -->
+<section class="py-16 lg:pb-40">
+  <div
+    id="entries"
+    class="entries md:max-w-2xl lg:max-w-5xl mx-auto"
+    data-view="cards"
+  >
+    <div class="entries-cards">
+      {%- include entries-cards.html author="page.author" -%}
+    </div>
+  </div>
+</section>
