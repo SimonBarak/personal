@@ -12,8 +12,10 @@
   transform: translateY(-50%);
 }
 
-.mockup-gallery button {
-  opacity: 0;
+@media (min-width: 600px) {
+  .mockup-gallery button {
+    opacity: 0;
+  }
 }
 
 .mockup-gallery:hover button {
@@ -25,7 +27,7 @@
 }
 
 .active {
-  animation: flash 0.3s;
+  animation: flash 1s;
   display: block;
   /* opacity: 1; */
 }

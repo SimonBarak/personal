@@ -104,11 +104,8 @@ layout: default
 </section>
 <!-- -  -->
 <section class="py-10 blure-in flex flex-wrap">
-  {%- for item in site.projects -%}
-  <!-- ... -->
-  {%- if item.mobile-images[0] -%}<!-- ... -->
-  {%- include mobile-mockup.html -%}
-  <!-- ... -->{%- endif -%}<!-- ... -->{%- endfor -%}
+  {%- for item in site.projects -%} {%- if item.mobile-images[0] -%} {%- include
+  mobile-mockup.html -%} {%- endif -%}{%- endfor -%}
 </section>
 <section>
   <div class="py-10 md:py-20">
