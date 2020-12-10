@@ -57,7 +57,7 @@
       display: flex;
       align-items: center;
       justify-content: center;
-      background-image: url("./assets/img/grid-cross.svg");
+      background-image: url("grid-cross.svg");
       background-repeat: no-repeat;
       background-attachment: local;
       background-size: cover;
@@ -164,15 +164,19 @@
       "http://www.w3.org/2000/svg",
       "defs"
     );
-    StartDefs.innerHTML = `<marker id="startDefs" orient="auto" markerWidth="3" markerHeight="3" refX="-0.50" refY="0.5">
-    <!-- triangle pointing right (+x) -->
-    <path d="M0,0 V1 A 0.85 0.85, 0, 0, 1 ${conectedObjectShape}  1 V0 A 0.85 0.85, 0, 0, 1 0 0 Z" fill="${color}"></path>
-    </marker>`;
+
+    const initConnectShape = (params) => {
+      StartDefs.innerHTML = `<marker id="startDefs" orient="auto" markerWidth="3" markerHeight="3" refX="-0.50" refY="0.5">
+<!-- triangle pointing right (+x) -->
+<path d="M0,0 V1 A 0.85 0.85, 0, 0, 1 ${conectedObjectShape}  1 V0 A 0.85 0.85, 0, 0, 1 0 0 Z" fill="${color}"></path>
+</marker>`;
+    };
 
     containerSVG.append(StartDefs);
     //containerSVG.append(EndDefs);
 
     const drowLine = (newCoordinates) => {
+      initConnectShape();
       if (startCoordinates === null) {
         startCoordinates = newCoordinates;
       } else {
