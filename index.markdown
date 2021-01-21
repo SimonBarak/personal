@@ -3,7 +3,7 @@ layout: project-index-developer
 title: Šimon Bařák
 description: I'm web-developer and designer
 headline: I'm web-developer and designer
-thumb: "v1611261669/loners/og-file.jpg"
+thumb: "/v1611261669/loners/og-file.jpg"
 # thumb: "/v1600377921/loners/og-files_n9utxt.jpg"
 ---
 
