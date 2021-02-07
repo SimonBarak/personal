@@ -6,34 +6,50 @@
     <title>Connect Dots</title>
   </head>
   <style>
+    :root {
+      --basic-color: rgb(60, 80, 255);
+      --cta-color: rgb(45, 45, 45);
+      --grid-cols: 1;
+      --grid-rows: 1;
+    }
+
     body {
       background-color: rgb(37, 37, 37);
       font-family: sans-serif;
       margin: 0;
     }
 
-    .controls {
-      margin: 10px;
+    .box {
+      display: inline-block;
     }
 
-    .download {
+    .controls {
+      margin: 1.5rem;
+      margin-top: 2rem;
+    }
+
+    .center {
+      text-align: center;
+    }
+
+    .cta {
       border-radius: 20px;
       padding: 0.5em 0.7em;
+      margin-bottom: 0.7em;
       font-size: 2em;
-      background-color: rgb(60, 80, 255);
+      background-color: var(--cta-color);
       color: white;
       cursor: pointer;
       text-decoration: none;
       display: inline-block;
     }
 
-    .download:hover {
-      background-color: rgb(60, 255, 89);
+    .color-picker {
+      background-color: var(--basic-color);
     }
 
-    :root {
-      --grid-cols: 1;
-      --grid-rows: 1;
+    .download:hover {
+      background-color: rgb(60, 255, 89);
     }
 
     #svg {
@@ -41,12 +57,13 @@
       display: block;
       z-index: 100;
       pointer-events: none;
+      color: var(--basic-color);
     }
 
     #container {
       cursor: pointer;
-      width: 640px;
-      height: 640px;
+      width: 320px;
+      height: 320px;
       display: grid;
       grid-gap: 0;
       grid-template-rows: repeat(var(--grid-rows), 1fr);
@@ -63,6 +80,10 @@
       background-size: cover;
     }
 
+    .hidden {
+      display: none;
+    }
+
     .ball {
       height: 3rem;
       width: 3rem;
@@ -72,25 +93,39 @@
 
     .grid-cell:hover .ball {
       transition: all 0.3s;
-      background-color: rgb(60, 80, 255);
+      background-color: var(--basic-color);
     }
 
     .active {
-      background-color: rgb(60, 80, 255);
+      background-color: var(--basic-color);
     }
   </style>
   <body>
     <div class="box">
       <svg
         id="svg"
-        width="640"
-        height="640"
+        width="320"
+        height="320"
         xmlns="http://www.w3.org/2000/svg"
+        class="canvas"
       ></svg>
       <div id="container"></div>
 
       <div class="controls">
-        <a id="link" class="download" download>Download SVG</a>
+        <div class="center">
+          <input
+            type="color"
+            id="basic-color"
+            name="basic-color"
+            value="rgb(60, 80, 255)"
+            class="hidden"
+            onchange="handleColorPickerChange"
+          />
+          <label for="basic-color" class="cta color-picker">Change color</label>
+        </div>
+        <div class="center">
+          <a id="link" class="cta" download>Download SVG</a>
+        </div>
       </div>
     </div>
 
@@ -99,16 +134,13 @@
     </svg> -->
   </body>
   <script>
-    let color = "rgba(60, 80, 255, 1)";
-    //const bgColor = "rgb(38, 56, 255)";
-
-    const grid = 160;
+    const grid = 80;
     const gridOffset = grid / 2;
-    const shapeSize = grid - 15;
+    const shapeSize = grid - 10;
     const shapeRound = shapeSize / 2;
 
     //const mistake = 1; // 1.08
-    const conectedObjectShape = 1.21; // 1.08
+    const conectedObjectShape = 1.28; // 1.08
 
     let startCoordinates = null;
 
@@ -121,6 +153,38 @@
     function pythagorean(sideA, sideB) {
       return Math.sqrt(Math.pow(sideA, 2) + Math.pow(sideB, 2));
     }
+
+    const handleColorPickerChange = (input) => {
+      console.log(input);
+    };
+
+    /////////////////////
+    // COLOR PICKER
+    ////////////////////
+
+    const handleThemeUpdate = (cssVars) => {
+      const root = document.querySelector(":root");
+      const keys = Object.keys(cssVars);
+      keys.forEach((key) => {
+        root.style.setProperty(key, cssVars[key]);
+      });
+    };
+
+    const initialiteInput = (input) => {
+      input.addEventListener("input", watchColorPicker, false);
+      //input.addEventListener("change", watchColorPicker, false);
+
+      function watchColorPicker(event) {
+        const { value } = event.target;
+        console.log(value);
+        const root = document.querySelector(":root");
+        console.log(value);
+        root.style.setProperty("--basic-color", value);
+      }
+    };
+
+    const ColorPickerElement = document.getElementById("basic-color");
+    initialiteInput(ColorPickerElement);
 
     const prepareSVG = (elementID) => {
       //get svg element.
@@ -167,7 +231,7 @@
     const initConnectShape = (params) => {
       StartDefs.innerHTML = `<marker id="startDefs" orient="auto" markerWidth="3" markerHeight="3" refX="-0.50" refY="0.5">
         <!-- triangle pointing right (+x) -->
-        <path d="M0,0 V1 A 0.85 0.85, 0, 0, 1 ${conectedObjectShape}  1 V0 A 0.85 0.85, 0, 0, 1 0 0 Z" fill="${color}"></path>
+        <path d="M0,0 V1 A 0.85 0.85, 0, 0, 1 ${conectedObjectShape}  1 V0 A 0.85 0.85, 0, 0, 1 0 0 Z" fill="currentColor"></path>
         </marker>`;
     };
 
@@ -188,7 +252,7 @@
           startCoordinates[0] === newCoordinates[0] ||
           startCoordinates[1] === newCoordinates[1];
 
-        const lineColor = straight ? color : "";
+        const lineColor = straight ? "currentColor" : "";
         const lineShape = straight ? "" : "url(#startDefs)";
         const lineWight = straight
           ? shapeSize
@@ -228,7 +292,7 @@
         "path"
       );
       newPath.setAttribute("d", d);
-      newPath.setAttribute("fill", color);
+      newPath.setAttribute("fill", "currentColor");
       containerSVG.append(newPath);
     };
 
