@@ -1,8 +1,8 @@
 ---
 layout: project-index-developer
 title: Šimon Bařák
-description: Information technology and human science
-headline: Information technology and human science
+description: Connect information technology and human science
+headline: Connect information technology and human science
 thumb: "/v1611261669/loners/og-file.jpg"
 # thumb: "/v1600377921/loners/og-files_n9utxt.jpg"
 ---

@@ -1254,6 +1254,12 @@ video {
   color: rgba(45, 55, 72, var(--text-opacity));
 }
 
+.text-blue-500 {
+  --text-opacity: 1;
+  color: #4299e1;
+  color: rgba(66, 153, 225, var(--text-opacity));
+}
+
 .hover\:text-gray-600:hover {
   --text-opacity: 1;
   color: #718096;
