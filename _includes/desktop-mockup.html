@@ -1,0 +1,28 @@
+<div
+  class="relative md:w-1/2 md:border md:border-gray-800 w-full py-10 md:py-20 bg-gray-900"
+>
+  <div class="px-2 mockup-gallery">
+    <button
+      class="vertical-absolute-center left-0 px-2 py-0 text-4xl focus:outline-none"
+      id="prev"
+    >
+      ‹
+    </button>
+    <button
+      class="vertical-absolute-center right-0 px-2 py-0 text-4xl focus:outline-none"
+      id="next"
+    >
+      ›
+    </button>
+    <div class="desktop-mockup m-auto">
+      {%- for image in item.mobile-images -%}
+      <div class="slide">
+        <img
+          src="https://res.cloudinary.com/dhxmg9p4i/image/upload/{{image}}"
+          alt=""
+        />
+      </div>
+      {%- endfor -%}
+    </div>
+  </div>
+</div>

@@ -1,5 +1,5 @@
 {
-  "name": "Archive-loners",
+  "name": "simon-barak",
   "version": "1.0.0",
   "main": "index.js",
   "repository": "https://github.com/lonersCompany/archive-loners.git",
@@ -8,7 +8,7 @@
   "scripts": {
     "prod": "NODE_ENV=production webpack",
     "dev": "NODE_ENV=development webpack --watch",
-    "start": "Code . | NODE_ENV=development webpack --watch | bundle exec jekyll serve --trace"
+    "start": "Code . | bundle exec jekyll serve --trace"
   },
   "dependencies": {
     "@tailwindcss/typography": "^0.2.0",
