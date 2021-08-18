@@ -3,7 +3,7 @@ layout: project-index-developer
 title: Šimon Bařák
 description: I design and build web applications
 headline: I design and build web applications
-thumb: "/v1611261669/loners/og-file.jpg"
+thumb: "/v1629310138/loners/og-file-two.jpg"
 # thumb: "/v1600377921/loners/og-files_n9utxt.jpg"
 ---
 
