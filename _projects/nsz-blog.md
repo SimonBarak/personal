@@ -1,11 +1,13 @@
 ---
 layout: project
-title: Blog pro NSZ
-mobile-images:
-  - "/v1624874811/loners/konference.jpg"
-  - "/v1602162751/loners/blog2.jpg"
-  - "/v1602162752/loners/blog3.jpg"
-  - "v1602162752/loners/blog8.jpg"
+weight: 800
+title: Blog for primary prosecutors office
+website_domain: konference.blog
+website_link: https://konference.blog/
+role: Design and development
+technology: JAM stack, Jekyll, JS
+video-thumb: https://res.cloudinary.com/dhxmg9p4i/video/upload/v1635950873/loners/blog.mp4
+video-thumb-poster: https://res.cloudinary.com/dhxmg9p4i/image/upload/v1635950859/loners/vk-_2021-11-03_at_15.42.36.jpg
 authors:
   - Simon
 ---

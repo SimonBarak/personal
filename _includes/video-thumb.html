@@ -1,0 +1,23 @@
+<div class="border border-gray-800">
+  <div class="video-wrapper relative">
+    <div class="absolute top-0 right-0 p-4">
+      <img src="/assets/ico/play.svg" alt="play icon" class="w-5 lg:w-6" />
+    </div>
+    <video
+      class="w-full video-thumb"
+      src="{{item.video-thumb}}"
+      poster="{{item.video-thumb-poster}}"
+    ></video>
+  </div>
+  <div class="p-2 md:p-4">
+    <h1 class="font-medium">
+      {{item.title}} {% if item.website_domain != '' %}
+      <a class="text-blue-500" href="{{website_link}}"
+        >{{item.website_domain}}</a
+      >
+      {% endif %}
+    </h1>
+    <div>{{item.role}}</div>
+    <div class="opacity-50">{{item.technology}}</div>
+  </div>
+</div>

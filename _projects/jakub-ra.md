@@ -1,7 +1,11 @@
 ---
 layout: project
 date: "2019-10-10T13:56:19.000+00:00"
-title: jakubra.com
+title: Photo portfolio
+website_domain: Jakubra.com
+website_link: Jakubra.com
+role: Design and development
+technology: JAM stack, Jekyll
 weight: 999
 behance: "https://www.behance.net/gallery/96565345/Jakub-Ra"
 thumb: "/v1575835865/loners/jakub-thumb_ilh5m6.jpg"
