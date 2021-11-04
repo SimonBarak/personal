@@ -1,6 +1,6 @@
 <div class="border border-gray-800">
   <div class="video-wrapper relative cursor-pointer">
-    <div class="absolute top-0 right-0 p-4">
+    <div class="absolute top-0 right-0 p-2 md:p-4">
       <img src="/assets/ico/play.svg" alt="play icon" class="w-5 lg:w-6" />
     </div>
     <video
@@ -9,7 +9,7 @@
       poster="{{item.video-thumb-poster}}"
     ></video>
   </div>
-  <div class="p-2 md:p-4">
+  <div class="p-2 md:p-4 hidden md:block">
     <h1 class="font-medium">
       {{item.title}} {% if item.website_domain != '' %}
       <a class="text-blue-500" href="{{item.website_link}}"
