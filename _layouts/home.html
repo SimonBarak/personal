@@ -4,7 +4,7 @@ layout: default
 
 <!-- -  -->
 <section class="pt-20 pb-10 blure-in">
-  <div class="mx-auto px-2 max-w-4xl">
+  <div class="mx-auto px-4 max-w-4xl">
     <h1 class="mb-10 text-3xl md:text-6xl font-medium">{{ page.headline }}</h1>
     <div class="">{{ content }}</div>
     <!-- <div>
@@ -38,9 +38,16 @@ layout: default
 </section> -->
 
 <section class="pb-10 blure-in text-center md:text-left">
-  <div class="max-w-4xl mx-auto">
-    <div class="text-sm px-4 text-gray-400">See my work on social media</div>
-    <div class="flex flex-wrap items-baseline justify-center md:justify-start">
+  <div class="max-w-4xl mx-auto px-4 mb-2">
+    <div
+      class="
+        flex flex-wrap
+        items-baseline
+        justify-center
+        md:justify-start
+        gap-2
+      "
+    >
       <a
         class="
           flex
@@ -51,12 +58,11 @@ layout: default
           rounded-lg
           py-2
           px-4
-          m-2
         "
         href="https://twitter.com/S_SCHIACCI"
       >
         <img
-          class="w-6 h-6 mr-4"
+          class="w-6 h-6 mr-2"
           src="/assets/ico/icon-twitter.svg"
           alt="Simon Barak Avatar"
         />
@@ -74,12 +80,11 @@ layout: default
           rounded-lg
           py-2
           px-4
-          m-2
         "
         href="https://twitter.com/S_SCHIACCI"
       >
         <img
-          class="w-6 h-6 mr-4"
+          class="w-6 h-6 mr-2"
           src="/assets/ico/icon-instagram.svg"
           alt="Simon Barak Avatar"
         />
@@ -97,12 +102,11 @@ layout: default
           rounded-lg
           py-2
           px-4
-          m-2
         "
         href="https://www.linkedin.com/in/simon-barak/"
       >
         <img
-          class="w-6 h-6 rounded-full mr-4"
+          class="w-6 h-6 rounded-full mr-2"
           src="/assets/ico/icon-linkedin.svg"
           alt="Behance Icon"
         />
@@ -120,12 +124,11 @@ layout: default
           rounded-lg
           py-2
           px-4
-          m-2
         "
         href="https://github.com/simonbarak"
       >
         <img
-          class="w-6 h-6 rounded-full mr-4"
+          class="w-6 h-6 rounded-full mr-2"
           src="/assets/ico/icon-github.svg"
           alt="github icon"
         />
@@ -144,12 +147,11 @@ layout: default
           rounded-lg
           py-2
           px-4
-          m-2
         "
         href="https://www.behance.net/simon-barak"
       >
         <img
-          class="w-6 h-6 rounded-full mr-4"
+          class="w-6 h-6 rounded-full mr-2"
           src="/assets/ico/icon-behance.svg"
           alt="Behance Icon"
         />
@@ -162,7 +164,7 @@ layout: default
 
   <div class="max-w-4xl mx-auto">
     <!-- <div class="text-sm p-2 m-2 text-gray-400">Contact</div> -->
-    <div class="flex flex-wrap items-baseline justify-center md:justify-start">
+    <div class="flex flex-wrap px-4">
       <a
         class="
           flex
@@ -173,12 +175,11 @@ layout: default
           rounded-lg
           py-2
           px-4
-          m-2
         "
         href="mailto:simon@hlasem.com"
       >
         <img
-          class="w-6 h-6 rounded-full mr-4"
+          class="w-6 h-6 rounded-full mr-2"
           src="/assets/ico/icon-mail.svg"
           alt="Avatar of Jonathan Reinink"
         />
@@ -203,12 +204,16 @@ layout: default
   </div>
 </section>
 
-<section class="py-10 mb-40">
+<section class="py-10">
   <div class="container mx-auto">
-    <h2 class="text-3xl p-2 m-2 text-gray-400">Tool box</h2>
+    <h2 class="text-3xl p-2 m-2 text-gray-400">Tools I enjoy to work with</h2>
     {%- include tool-box.html -%}
   </div>
 </section>
+
+<footer class="text-center py-48">
+  <p class="-">simon@hlasem.com</p>
+</footer>
 
 <!-- <section class="py-10 lg:pb-40">
   <div class="md:max-w-2xl lg:max-w-5xl mx-auto">

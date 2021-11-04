@@ -1,7 +1,7 @@
 ---
 layout: project
 title: Website for Architects
-website_domain: mparch.cz
+website_domain: Mparch.cz
 website_link: https://mparch.cz/
 role: Design and development
 technology: JAM stack, Jekyll, JS
@@ -26,6 +26,6 @@ thumb: "/v1586546182/loners/Screenshot_2020-04-10_21.16.05_t2wghz.jpg"
 behance: https://www.behance.net/gallery/96465019/M-P-Architekti
 github_project: https://github.com/lonersCompany/project-archive
 examples: []
-video-thumb: https://res.cloudinary.com/dhxmg9p4i/video/upload/v1635789868/loners/vladkak.mp4
+video-thumb: https://res.cloudinary.com/dhxmg9p4i/video/upload/v1636033389/loners/mparch-2.mp4
 video-thumb-poster: https://res.cloudinary.com/dhxmg9p4i/image/upload/v1635853609/loners/mp-arch.jpg
 ---

@@ -9,7 +9,7 @@ mobile-images:
 images:
 shortDesript: ""
 website: https://vladkak.cz/
-weight: 300
+weight: 800
 thumb: ""
 behance: ""
 github_project: ""

@@ -17,7 +17,7 @@ authors:
   - Magdaléna
   - Simon
 examples: []
-weight: 500
+weight: 700
 behance: ""
 video-thumb: https://res.cloudinary.com/dhxmg9p4i/video/upload/v1635855885/loners/martina-3.mp4
 video-thumb-poster: https://res.cloudinary.com/dhxmg9p4i/image/upload/v1635855750/loners/vk-_2021-11-02_at_13.17.29.jpg

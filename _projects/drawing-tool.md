@@ -3,8 +3,8 @@ layout: project
 title: Online drawing tool
 role: Design and development
 technology: SVG, JS, DOM, CSS
-website_domain: ""
-website_link: ""
+website_domain: "prototype"
+website_link: "https://simon-barak.link/connect-dots"
 images:
 shortDesript:
 website:
