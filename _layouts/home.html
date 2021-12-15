@@ -39,7 +39,7 @@ layout: default
 
 <section class="pb-10 md:text-left">
   <div class="max-w-4xl mx-auto px-4 mb-2">
-    <div class="flex flex-wrap items-baseline justify-start gap-2">
+    <div class="flex flex-wrap items-baseline justify-start">
       <a
         class="
           flex
@@ -50,6 +50,8 @@ layout: default
           rounded-lg
           py-2
           px-4
+          ml-2
+          mb-2
         "
         href="https://twitter.com/S_SCHIACCI"
       >
@@ -72,6 +74,8 @@ layout: default
           rounded-lg
           py-2
           px-4
+          ml-2
+          mb-2
         "
         href="https://twitter.com/S_SCHIACCI"
       >
@@ -94,6 +98,8 @@ layout: default
           rounded-lg
           py-2
           px-4
+          ml-2
+          mb-2
         "
         href="https://www.linkedin.com/in/simon-barak/"
       >
@@ -116,6 +122,8 @@ layout: default
           rounded-lg
           py-2
           px-4
+          ml-2
+          mb-2
         "
         href="https://github.com/simonbarak"
       >
@@ -139,6 +147,8 @@ layout: default
           rounded-lg
           py-2
           px-4
+          ml-2
+          mb-2
         "
         href="https://www.behance.net/simon-barak"
       >
@@ -167,6 +177,8 @@ layout: default
           rounded-lg
           py-2
           px-4
+          ml-2
+          mb-2
         "
         href="mailto:simon@hlasem.com"
       >
@@ -189,16 +201,16 @@ layout: default
 </section> -->
 
 <section class="">
-  <div class="container mx-auto grid grid-cols-3">
+  <div class="container mx-auto grid grid-cols-2 md:grid-cols-3">
     {% assign items = site.projects | sort: 'weight' %} {%- for item in items
-    limit: 7 -%} {%- if item.video-thumb -%} {%- include video-thumb.html -%}
+    limit: 9 -%} {%- if item.video-thumb -%} {%- include video-thumb.html -%}
     {%- endif -%}{%- endfor -%}
   </div>
 </section>
 
 <section class="py-10">
   <div class="container mx-auto">
-    <h2 class="text-lg md:text-3xl p-2 m-2 text-gray-400 font-medium">
+    <h2 class="text-lg md:text-4xl p-2 m-2 text-gray-400 font-medium">
       Tool Box
     </h2>
     {%- include tool-box.html -%}
