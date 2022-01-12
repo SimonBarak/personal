@@ -7,7 +7,7 @@ images:
 shortDesript:
 website:
 github_project: ""
-weight: 1000
+weight: 10
 behance: ""
 thumb: ""
 authors:
