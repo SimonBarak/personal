@@ -1,6 +1,6 @@
 ---
 layout: home
-title: Šimon Bařák
+title: Simon Barak
 description: Simon Barak
 thumb: "/v1629310138/loners/og-file-two.jpg"
 # thumb: "/v1600377921/loners/og-files_n9utxt.jpg"
