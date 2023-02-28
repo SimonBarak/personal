@@ -5033,8 +5033,8 @@ video {
     display: inline;
   }
 
-  .md\:text-xl {
-    font-size: 1.25rem;
+  .md\:text-2xl {
+    font-size: 1.5rem;
   }
 
   .md\:text-3xl {
@@ -6380,6 +6380,10 @@ video {
 
   .lg\:pb-20 {
     padding-bottom: 5rem;
+  }
+
+  .lg\:pb-24 {
+    padding-bottom: 6rem;
   }
 
   .lg\:pt-32 {
