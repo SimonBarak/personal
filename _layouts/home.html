@@ -3,40 +3,16 @@ layout: default
 ---
 
 <!-- -  -->
-<section class="pt-20 pb-10 blure-in">
+<section class="pt-20 lg:pt-32 pb-10 lg:pb-20">
   <div class="mx-auto px-4 max-w-4xl">
-    <div class="">{{ content }}</div>
-    <!-- <div>
-      <div class="flex items-center mb-10">
-        <img
-          src="assets/img/identity.jpg"
-          alt="Portait of Simon Barak"
-          class="rounded-full overflow-hidden border-2 border-gray-400 w-20"
-        />
-        <div class="text-left ml-4">
-          <p class="font-bold">Šimon Bařák</p>
-          <p class="">Web Developer</p>
-        </div>
-      </div>
-    </div> -->
+    <h1 class="mb-10 lg:mb-20 text-3xl md:text-6xl font-medium">
+      Design and development
+    </h1>
+    <div class="md:text-xl">{{ content }}</div>
   </div>
 </section>
-<!-- -  -->
 
-<!-- <section>
-  <div class="py-10 md:py-20">
-    <div class="desktop-mockup m-auto">
-      <div>
-        <img
-          src="https://res.cloudinary.com/dhxmg9p4i/image/upload/v1601044804/blog/pr.jpg"
-          alt=""
-        />
-      </div>
-    </div>
-  </div>
-</section> -->
-
-<section class="pb-10 md:text-left">
+<section class="pb-10 lg:pb-20 md:text-left">
   <div class="max-w-4xl mx-auto px-4 mb-2">
     <div class="flex flex-wrap items-baseline justify-start">
       <a
@@ -52,9 +28,9 @@ layout: default
           <div class="leading-none">Twitter</div>
         </div>
       </a>
-      <!-- <a
+      <a
         class="flex cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg py-2 px-4 ml-2 mb-2"
-        href="https://twitter.com/S_SCHIACCI"
+        href="https://www.instagram.com/simm_eon"
       >
         <img
           class="w-6 h-6 mr-2"
@@ -64,7 +40,7 @@ layout: default
         <div class="">
           <div class="leading-none">Instagram</div>
         </div>
-      </a> -->
+      </a>
       <a
         class="flex cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg py-2 px-4 ml-2 mb-2"
         href="https://www.linkedin.com/in/simon-barak/"
@@ -92,7 +68,7 @@ layout: default
         </div>
       </a>
 
-      <a
+      <!-- <a
         class="flex cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg py-2 px-4 ml-2 mb-2"
         href="https://www.behance.net/simon-barak"
       >
@@ -104,7 +80,7 @@ layout: default
         <div class="">
           <div class="leading-none">Behance</div>
         </div>
-      </a>
+      </a> -->
     </div>
   </div>
 
@@ -128,13 +104,13 @@ layout: default
   </div>
 </section>
 
-<!-- <section class="py-10 blure-in flex flex-wrap">
+<!-- <section class="py-10 flex flex-wrap">
   {%- for item in site.projects -%} {%- if item.mobile-images[0] -%} {%- include
   mobile-mockup.html -%} {%- endif -%}{%- endfor -%}
 </section> -->
 
 <section class="">
-  <div class="container mx-auto grid grid-cols-2 md:grid-cols-3">
+  <div class="mx-auto grid grid-cols-2 md:grid-cols-3">
     {% assign items = site.projects | sort: 'weight' %} {%- for item in items
     limit: 10 -%} {%- if item.video-thumb -%} {%- include video-thumb.html -%}
     {%- endif -%}{%- endfor -%}
