@@ -14,6 +14,6 @@ layout: default
 <div class="max-w-2xl m-auto">
     {% assign items = site.projects | sort: 'weight' %} {%- for item in items
         limit: 13 -%} {%- if item.video-thumb -%} {%- include video-thumb.html -%}
-        {%- endif -%}{%- endfor -%}
+    {%- endif -%}{%- endfor -%}
 </div>   
 
