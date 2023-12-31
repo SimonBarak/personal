@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: minimal%screen
 title: Screen mockup tool
 website_domain: minimalscreen.online
 website_link: https://minimalscreen.online/

@@ -71,7 +71,7 @@ layout: default
       <div class="flex flex-wrap px-4">
         <a
           class="flex cursor-pointer border-2 border-gray-700 hover:border-blue-500 items-center rounded-lg py-2 px-4 ml-2 mb-2"
-          href="mailto:simon@hlasem.com"
+          href="mailto:barak.simon.as@gmail.com"
         >
           <img
             class="w-6 h-6 rounded-full mr-2"
@@ -79,7 +79,7 @@ layout: default
             alt="Avatar of Jonathan Reinink"
           />
           <div class="">
-            <div class="leading-none">simon@hlasem.com</div>
+            <div class="leading-none">barak.simon.as@gmail.com</div>
           </div>
         </a>
       </div>
@@ -87,15 +87,10 @@ layout: default
   </div>
 </section>
 
-<!-- <section class="py-10 flex flex-wrap">
-  {%- for item in site.projects -%} {%- if item.mobile-images[0] -%} {%- include
-  mobile-mockup.html -%} {%- endif -%}{%- endfor -%}
-</section> -->
-
 <section class="">
   <div class="mx-auto grid grid-cols-2 md:grid-cols-3">
     {% assign items = site.projects | sort: 'weight' %} {%- for item in items
-    limit: 10 -%} {%- if item.video-thumb -%} {%- include video-thumb.html -%}
+    limit: 13 -%} {%- if item.video-thumb -%} {%- include project-link.html -%}
     {%- endif -%}{%- endfor -%}
   </div>
 </section>
@@ -109,5 +104,5 @@ layout: default
   </div>
 </section>
 <footer class="text-center py-48">
-  <p class="-">simon@hlasem.com</p>
+  <p class="-">barak.simon.as@gmail.com</p>
 </footer>

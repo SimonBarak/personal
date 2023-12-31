@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: Martina%Ruzickova
 title: Artist portfolio
 website_domain: martinaruzickova.xyz
 website_link: http://martinaruzickova.xyz

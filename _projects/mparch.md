@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: mpArch
 title: Website for Architects
 website_domain: Mparch.cz
 website_link: https://mparch.cz/

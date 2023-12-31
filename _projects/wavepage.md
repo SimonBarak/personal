@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: wavepage
 title: Text-to-speech editor
 role: Design and development
 technology: Javascript

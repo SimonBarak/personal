@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: Website%for%hairdesser
 title: Website for hairdesser
 website_domain: Vlaďka K.
 website_link: https://vladkak.cz

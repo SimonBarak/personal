@@ -14,18 +14,15 @@
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
 title: Simon Barak
-email: simon@loners.company
+email: barak.simon.as@gmail.com
 description: >- # this means to ignore newlines until "baseurl:"
-  Write an awesome description for your new site here. You can edit this
-  line in _config.yml. It will appear in your document head meta (for
-  Google search results) and in your feed.xml site description.
+  My personal website
 #baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://loners.company" # the base hostname & protocol for your site, e.g. http://example.com
+url: "https://simon-barak.link" # the base hostname & protocol for your site, e.g. http://example.com
 img_url: "https://res.cloudinary.com/dhxmg9p4i/image/upload/"
-github_url: "https://github.com/lonersCompany/"
+github_url: "https://github.com/SimonBarak"
 twitter_username: S_SCHITACCI
-github_username: LonersCompany
-instagram_username: Simon_barak_url
+github_username: SimonBarak
 
 collections:
   projects:
@@ -41,3 +38,9 @@ exclude:
   - "*.config.js"
   - "package*.json"
   - "node_modules"
+
+plugins:
+  - jekyll-postcss
+
+postcss:
+  cache: false

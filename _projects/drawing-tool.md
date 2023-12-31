@@ -1,6 +1,6 @@
 ---
 layout: project
-title: Online drawing tool
+name: Drawing%tool
 role: Design and development
 technology: SVG, JS, DOM, CSS
 website_domain: "prototype"

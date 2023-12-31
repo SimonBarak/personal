@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: Czech%Prosecutor%Institute
 date: "2019-10-10T13:56:19.000+00:00"
 title: Czech Prosecutor Institute
 weight: 20

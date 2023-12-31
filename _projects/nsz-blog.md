@@ -1,5 +1,6 @@
 ---
 layout: project
+projectlink: NSZ%blog
 weight: 800
 title: Blog for primary prosecutors office
 website_domain: konference.blog

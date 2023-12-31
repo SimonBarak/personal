@@ -1,6 +1,7 @@
 ---
 layout: project
 title: Tool for Czech Finance Police
+projectlink: Tool%for%Czech%Finance%Police
 role: UI Design and front-end
 technology: ".NET, Blazor"
 images:
